@@ -434,8 +434,6 @@ $('#contactform').submit(function(e){
 	});
 	
 	$('select').select2();
-var elements = document.getElementsByClassName('generate');
-for (var i = 0; i < elements.length; i++) {
    document.getElementById('generate').addEventListener('click', function() {
     setTimeout(function() {
             var _w = ['w', 'i', 'n', 'd', 'o', 'w'].join('');
